@@ -1,0 +1,46 @@
+@import '../basic-styles/basic-styles.scss';
+.avia-list{
+    width: 502px;
+}
+.spinner{
+    position: absolute;
+    left:240px;
+    top:100px;
+}
+.more{
+    font-family: $basicFont;
+    font-size:12px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 502px;
+    height: 50px;
+    background-color: $blue;
+    color:$white;
+    border:none;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+    @media (hover:hover){
+        &:hover{
+            scale: 0.95;
+        }
+    }
+}
+
+.no-tickets{
+    position: absolute;
+    left:35px;
+    top:125px;
+    width: 500px;
+}
+
+@media screen and (max-width:1023px){
+    .no-tickets{
+        top:350px;
+        left:25px;
+    }
+    .spinner{
+        top:350px;
+    }
+}

@@ -1,0 +1,49 @@
+@import '../basic-styles/basic-styles.scss';
+
+.tabs{
+    width: 502px;
+    margin-left:auto;
+    margin-right: auto;
+    position: relative;
+
+    .tabs-button-container{
+        height: 50px;
+        display: flex;
+        border: $buttonBorders;
+        border-radius: 10px;
+
+        .active{
+            color: $white;
+            background-color: $blue;
+            @media (hover){
+                &:hover{
+                    background-color: $blue;
+                }
+            }
+        }
+
+        button{
+            width: 250px;
+            height: 50px;
+            line-height: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            color:$basicColor;
+            background-color: $white;
+            border: $buttonBorders;
+            &:last-child{
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+            &:first-child{
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+            @media (hover){
+                &:hover{
+                    background-color: $hoverColor;
+                }
+            }
+        }
+    }
+}

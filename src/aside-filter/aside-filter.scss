@@ -1,0 +1,85 @@
+@import '../basic-styles/basic-styles.scss';
+.aside-filter{
+    font-family: $basicFont;
+    position: absolute;
+    top:0;
+    left: -250px;
+    box-shadow: $shadow;
+    background-color: $white;
+    border-radius: 10px;
+}
+
+.filter-title{
+    list-style: none;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.aside-filter-list{
+    margin: 0;
+    padding: 0;
+    width: 232px;
+    height: 252px;
+    display: flex;
+    flex-direction: column;
+    .filter-title{
+        display: flex;
+        justify-content: center;
+    }
+    .filter-checkBox-list{
+        display: flex;
+        flex-direction: column;
+        .checkbox-item{
+            height: 40px;
+            display: flex;
+        }
+    }
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    &:checked + span::before {
+        background-color: $blue;
+        border-color: $blue;
+      }
+}
+
+.checkbox-item{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none; 
+    padding: 0;
+    @media (hover:hover){
+        &:hover{
+            background-color: $hoverColor;
+        }
+    }
+}
+
+.custom-checkbox{
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    background-image: url('../../public/Form.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+    background-image: url("../../public/Checkbox.svg");
+    border: none;
+}
+
+@media screen and (max-width:1023px) {
+    .aside-filter{
+        position: static;
+    }   
+}

@@ -1,0 +1,13 @@
+@import "../basic-styles/basic-styles.scss";
+
+body{
+    color: $basicColor;
+    background-color: $bodyColor;
+    font-family: $basicFont;
+}
+
+.main{
+    min-width: 502px;
+    display: flex;
+    flex-direction: column;
+}

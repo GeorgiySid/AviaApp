@@ -1,0 +1,61 @@
+@import '../basic-styles/basic-styles.scss';
+
+.avia-list-item{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 502px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: $shadow;
+    &__header{
+        width: 462px;
+        height: 36px;
+        display: flex;
+        justify-content: space-between;
+        padding-left:20px;
+        .price{
+            color:$blue;
+            font-size: 24px;
+            padding-top: 5px;
+            font-weight: 500;
+        }
+        .aviaLogo{
+            min-width: 110px;
+            min-height: 36px;
+        }
+    }
+    li{
+        list-style: none;
+    }
+    &__main{
+        width: 462px;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__city-time{
+        margin-left:20px;
+        padding: 0;
+    }
+}
+
+.city, 
+.travel,
+.change{
+    color:$gray;
+    font-size: 12px;
+    list-style: 18px;
+    padding-bottom: 2px;
+}
+
+.travel-time,
+.time,
+.country{
+    padding-bottom:10px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+}
