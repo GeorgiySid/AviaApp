@@ -32,6 +32,12 @@ const Tabs = () => {
           >
             САМЫЙ БЫСТРЫЙ
           </button>
+          <button
+            className={sortOrder === 'optimal' ? 'active' : ''}
+            onClick={() => handleSortClick('optimal')}
+          >
+            ОПТИМАЛЬНЫЙ
+          </button>
         </div>
       </div>
       <AsideFilter />

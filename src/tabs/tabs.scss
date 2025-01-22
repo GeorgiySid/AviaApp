@@ -6,6 +6,10 @@
     margin-right: auto;
     position: relative;
 
+    .tab-buttons{
+        min-width: 502px;
+    }
+
     .tabs-button-container{
         height: 50px;
         display: flex;
@@ -23,7 +27,7 @@
         }
 
         button{
-            width: 250px;
+            width: 167px;
             height: 50px;
             line-height: 20px;
             font-size: 12px;

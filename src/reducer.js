@@ -21,6 +21,9 @@ const sortTickets = (tickets, sortBy) => {
   if (sortBy === 'fastest') {
     return [...tickets].sort((a, b) => a.segments[0].duration - b.segments[0].duration)
   }
+  if (sortBy === 'optimal') {
+    return [...tickets].sort((a, b) => a.price + a.segments[0].duration - (b.price + b.segments[0].duration))
+  }
   return tickets
 }
 
